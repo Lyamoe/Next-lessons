@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Próximas Atividades</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section id="actual">
+                <h1>Próximas atividades</h1>
+                <table id="data">
+                    <thead>
+                        <tr>
+                            <th>Matéria</th>
+                            <th>Tópico</th>
+                            <th>Prazo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="next"></div>
+            </section>
+            <section id="finished">
+                <div class="ended"></div>
+            </section>
+            <section id="add">
+                <fieldset>
+                    <legend>Adicionar nova atividade</legend>
+                    <form id="lessons_data" action="form_data.py" method="post">
+                        <label for="subject">Matéria</label>
+                        <input required type="text" id="subject" />
+                        <br />
+                        <label for="activity">Tópico da atividade</label>
+                        <input required type="text" id="activity" />
+                        <br />
+                        <label for="deadline">Data de entrega</label>
+                        <input required type="date" id="deadline" />
+                        <br />
+                        <button type="submit">Confirmar</button>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
