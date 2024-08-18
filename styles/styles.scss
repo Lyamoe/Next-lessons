@@ -1,4 +1,37 @@
+//? Variables
+//* Colors
+$background-color: #f0f0f0;
+$primary-color: #c0370d;
+$text-color: #1f1313;
+//? Other
 * {
   box-sizing: border-box;
   margin: 0;
+}
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+h1, h2 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 200;
+}
+
+//? Header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+//? Table
+table {
+  border: 1px solid black;
+  margin-bottom: 10px;
 }

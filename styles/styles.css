@@ -1,4 +1,31 @@
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #1f1313;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 200;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #c0370d;
+  color: #1f1313;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+table {
+  border: 1px solid black;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

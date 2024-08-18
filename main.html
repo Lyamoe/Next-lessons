@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./styles/styles.css" />
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Próximas Atividades</title>
     </head>
     <body>
-        <header></header>
+        <header>
+            <h1>Próximas atividades</h1>
+            <p>2° semestre ADS</p>
+        </header>
         <main>
             <section id="actual">
-                <h1>Próximas atividades</h1>
-                <table id="data">
+                <table id="act-data">
                     <thead>
                         <tr>
                             <th>Matéria</th>
@@ -21,10 +33,20 @@
                     </thead>
                     <tbody></tbody>
                 </table>
-                <div class="next"></div>
             </section>
+            <hr />
             <section id="finished">
-                <div class="ended"></div>
+                <h2>Finalizadas</h2>
+                <table id="past-data">
+                    <thead>
+                        <tr>
+                            <th>Matéria</th>
+                            <th>Tópico</th>
+                            <th>Prazo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </section>
             <section id="add">
                 <fieldset>
