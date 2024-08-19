@@ -1,28 +1,37 @@
 @charset "UTF-8";
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 500;
   outline: none;
 }
 
 body {
-  background-color: #e3e4ee;
+  background-color: #ededf3;
   color: #1f1313;
   font-family: "Montserrat", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 body :not(header) {
-  margin: 0 15px;
+  margin: 0 15px 0 10px;
 }
 
 h1,
 h2,
-button {
+button,
+legend {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 .header {
@@ -53,26 +62,36 @@ button {
     visibility: visible;
   }
 }
-table {
+section h2 {
+  font-size: 1.5em;
+}
+
+.table {
   width: 100%;
+  margin: 10px 0;
   border-collapse: collapse;
 }
-table th,
-table td {
+.table th {
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #f0a9a9;
+}
+.table th,
+.table td {
   border: 1px solid #000;
   padding: 8px;
   text-align: left;
 }
-table th:nth-child(1),
-table td:nth-child(1) {
+.table th:nth-child(1),
+.table td:nth-child(1) {
   width: 30%;
 }
-table th:nth-child(2),
-table td:nth-child(2) {
+.table th:nth-child(2),
+.table td:nth-child(2) {
   width: 50%;
 }
-table th:nth-child(3),
-table td:nth-child(3) {
+.table th:nth-child(3),
+.table td:nth-child(3) {
   width: 20%;
 }
 
@@ -85,15 +104,35 @@ hr {
   height: 20px;
 }
 
+@media (max-width: 400px) {
+  .table th:nth-child(1),
+  .table td:nth-child(1) {
+    width: 30%;
+  }
+  .table th:nth-child(2),
+  .table td:nth-child(2) {
+    width: 45%;
+  }
+  .table th:nth-child(3),
+  .table td:nth-child(3) {
+    width: 25%;
+  }
+}
+fieldset {
+  font-size: 1.2em;
+}
+
 .container {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px auto;
 }
-.container input {
+.container input, .container select {
   width: 50%;
+  border: 2px solid #772208;
+  height: 40px;
 }
 .container button {
   background-color: #772208;
@@ -106,7 +145,37 @@ hr {
   transition: background-color 0.3s ease, color 0.3s, border 0.3s ease;
 }
 .container button:hover {
-  background-color: #e3e4ee;
+  background-color: #ededf3;
   color: #1f1313;
   border: 2px solid #000;
+}
+
+@media (min-width: 700px) {
+  legend {
+    font-size: 2em;
+  }
+  input {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .container input, .container select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 800px) {
+  fieldset,
+  hr,
+  section {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+  .header {
+    padding: 10px 100px;
+  }
 }/*# sourceMappingURL=styles.css.map */

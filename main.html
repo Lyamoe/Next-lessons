@@ -24,7 +24,7 @@
         <main>
             <section id="actual">
                 <h2>Pendentes</h2>
-                <table id="act-data">
+                <table class="table" id="act-data">
                     <thead>
                         <tr>
                             <th>Matéria</th>
@@ -36,7 +36,7 @@
                         <tr>
                             <td>Math</td>
                             <td>Algebra</td>
-                            <td>2024-08-25</td>
+                            <td>25/08/2024</td>
                         </tr>
                     </tbody>
                 </table>
@@ -46,7 +46,7 @@
             <div class="space"></div>
             <section id="finished">
                 <h2>Finalizadas</h2>
-                <table id="past-data">
+                <table class="table" id="past-data">
                     <thead>
                         <tr>
                             <th>Matéria</th>
@@ -72,7 +72,36 @@
                     <form id="lessons_info" action="form_data.py" method="post">
                         <div class="container">
                             <label for="subject">Matéria:</label>
-                            <input required type="text" id="subject" />
+                            <select required id="subject">
+                                <option
+                                    class="transparent-text"
+                                    value="default"
+                                    selected
+                                    disabled
+                                >
+                                    Selecione
+                                </option>
+                                <option value="estatistica-aplicada">
+                                    Estatística aplicada
+                                </option>
+                                <option value="sistemas-informacao">
+                                    Sistemas de Informação
+                                </option>
+                                <option value="poo">
+                                    Programação Orientada a Objetos
+                                </option>
+                                <option value="engenharia-software">
+                                    Engenharia de Software
+                                </option>
+                                <option value="pi">Projeto Integrador</option>
+                                <option value="etica">
+                                    Ética Organizacional
+                                </option>
+                                <option value="ingles">Inglês II</option>
+                                <option value="contabilidade">
+                                    Contabilidade
+                                </option>
+                            </select>
                         </div>
                         <div class="container">
                             <label for="activity">Tópico:</label>

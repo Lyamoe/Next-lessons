@@ -1,7 +1,8 @@
 # Ignore all files
 *.scss
+*prettierrc
 
-# Ignore specific file
+# Ignore specific files
 styles.css.map
 script.test.js
 package.json
