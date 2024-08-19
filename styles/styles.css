@@ -13,7 +13,6 @@ body {
   background-color: #e3e4ee;
   color: #1f1313;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
 }
 body :not(header) {
   margin: 0 15px;

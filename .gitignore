@@ -1,0 +1,7 @@
+# Ignore all files
+*.scss
+
+# Ignore specific file
+styles.css.map
+script.test.js
+package.json
